@@ -492,7 +492,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">18</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">21</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -532,7 +532,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">18</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">21</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -547,6 +547,247 @@ mjx-container[display="true"] + br {
 			<div class="main-content">
 				<div class="home-content-container">
     <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2026/03/05/Self-Distillation-Enables-Continual-Learning/">
+                            <img src="https://raw.githubusercontent.com/Sundiasy/Sundiasy.github.io/refs/heads/main/images/wallhaven-wqery6-light.webp" alt="Self-Distillation Enables Continual Learning" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2026/03/05/Self-Distillation-Enables-Continual-Learning/">
+                            Self-Distillation Enables Continual Learning
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            这篇论文的核心逻辑非常优雅：让模型利用自身的“上下文学习（ICL）”能力，通过给昨天的自己当老师，来解决困扰大模型已久的“灾难性遗忘”问题。
+
+1. 这篇论文试图解决什么问题？目前，基础模型在部署后往往是“静态”的 。虽然可以通过检索或提示词改变行为，但无法在不更新参数的情况下内化新知识 。 然而，传统的微调（如 SFT）在引入新技能时，会面临以下核心挑战：
+
+灾难性遗忘 (Catastro...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Mar 05 2026 15:28:12 GMT+0800">
+                
+                    2026-03-05
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/paper-reading/">paper reading</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/OPD/">OPD</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2026/03/05/Self-Distillation-Enables-Continual-Learning/">Read more<span class="seo-reader-text">Self-Distillation Enables Continual Learning</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2026/03/05/Self-Distilled-Reasoner-On-Policy-Self-Distillation-for-Large-Language-Models/">
+                            <img src="https://raw.githubusercontent.com/Sundiasy/Sundiasy.github.io/refs/heads/main/images/wallhaven-wqery6-light.webp" alt="Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2026/03/05/Self-Distilled-Reasoner-On-Policy-Self-Distillation-for-Large-Language-Models/">
+                            Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            这篇论文的核心逻辑非常迷人：它探讨了模型是否可以像人类学生一样，通过“看标准答案（特权信息）”来反思并教导那个“没看答案的自己”。
+
+1. 这篇论文试图解决什么问题？在提升大语言模型（LLM）推理能力的道路上，目前主要有三条路径，但各有痛点：
+- 
+  强化学习（RLVR，如 GRPO）： 虽然效果好，但极其耗费计算资源（采样成本高），且奖励信号过于稀疏（只有对错，没有过程指导） 。
+- 
+...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Mar 05 2026 15:26:09 GMT+0800">
+                
+                    2026-03-05
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/paper-reading/">paper reading</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/OPD/">OPD</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2026/03/05/Self-Distilled-Reasoner-On-Policy-Self-Distillation-for-Large-Language-Models/">Read more<span class="seo-reader-text">Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2026/03/05/Self-Distillation-Bridges-Distribution-Gap-in-Language-Model-Fine-Tuning/">
+                            <img src="https://raw.githubusercontent.com/Sundiasy/Sundiasy.github.io/refs/heads/main/images/wallhaven-wqery6-light.webp" alt="Self-Distillation Bridges Distribution Gap in Language Model Fine-Tuning" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2026/03/05/Self-Distillation-Bridges-Distribution-Gap-in-Language-Model-Fine-Tuning/">
+                            Self-Distillation Bridges Distribution Gap in Language Model Fine-Tuning
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            这篇论文针对的是目前模型微调中一个非常痛、但又极具普遍性的问题。让我们像剥洋葱一样，一层层看看作者是如何破局的。
+
+1. 这篇论文试图解决什么问题？在 LLM 时代，我们经常要把一个已经训练得很好的模型（种子模型，Seed LM）拉去学习特定的下游任务（如写代码、调 API、算数学题） 。
+然而，这种*普通微调（Vanilla Fine-Tuning）*往往会引发*“灾难性遗忘”（Catas...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Mar 05 2026 15:25:53 GMT+0800">
+                
+                    2026-03-05
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/paper-reading/">paper reading</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/OPD/">OPD</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2026/03/05/Self-Distillation-Bridges-Distribution-Gap-in-Language-Model-Fine-Tuning/">Read more<span class="seo-reader-text">Self-Distillation Bridges Distribution Gap in Language Model Fine-Tuning</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
         
             <li class="home-article-item">
 
@@ -1127,222 +1368,11 @@ AUC @ K
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/2026/01/31/Rewarding-the-Rare-Uniqueness-Aware-RL-for-Creative-Problem-Solving-in-LLMs/">
-                            <img src="https://zhiyuanhubj.github.io/images/rare.png" alt="Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/2026/01/31/Rewarding-the-Rare-Uniqueness-Aware-RL-for-Creative-Problem-Solving-in-LLMs/">
-                            Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            Abstract大型语言模型的强化学习通过一个推广级目标得到了增强，该目标奖励罕见的高级推理策略，在不牺牲初始性能的情况下提高了多样化的解决方案发现。
-Motirollout级多样性 减少 过度集中在极少数几种常见的推理模式上  的现象
-Method
-仿照GRPO 生成 G 个样本；
-使用一个更强大的judge 判定输出结果好坏，聚类；
-根据聚类大小， 加上权重匹配项；
-
-Experimen...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Jan 31 2026 16:48:13 GMT+0800">
-                
-                    2026-01-31
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/paper-reading/">paper reading</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/rl/">rl</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2026/01/31/Rewarding-the-Rare-Uniqueness-Aware-RL-for-Creative-Problem-Solving-in-LLMs/">Read more<span class="seo-reader-text">Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-                    
-                
-
-                
-                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
-                        <a href="/2026/01/30/Your-Group-Relative-Advantage-Is-Biased/">
-                            <img src="https://raw.githubusercontent.com/Sundiasy/Sundiasy.github.io/refs/heads/main/images/wallhaven-wqery6-light.webp" alt="Your Group-Relative Advantage Is Biased" class="w-full h-full object-cover dark:brightness-75 transition-all" />
-                        </a>
-                    </div>
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
-                    <h3 class="home-article-title">
-                        <a href="/2026/01/30/Your-Group-Relative-Advantage-Is-Biased/">
-                            Your Group-Relative Advantage Is Biased
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            Abstract基于群体的强化学习从验证者奖励中受到有偏优势估计的困扰，这种估计低估了困难的提示，高估了容易的提示。这种问题通过一种历史感知的自适应难度加权方法得到解决，该方法提高了数学推理基准的性能。
-
-理论证明（期望角度和概率角度）
-方法提出
-方法数学证明
-
-Moti解决低估了困难的提示，高估了容易的提示问题，提出解决方法。
-Method两阶段：
-
-历史感知了解 Prompt 难度
-修正...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Jan 30 2026 18:50:04 GMT+0800">
-                
-                    2026-01-30
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/paper-reading/">paper reading</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/rl/">rl</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2026/01/30/Your-Group-Relative-Advantage-Is-Biased/">Read more<span class="seo-reader-text">Your Group-Relative Advantage Is Biased</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2025/10/19/paper-reading%E2%80%94%E2%80%94AGENTNET-DECENTRALIZED-EVOLUTIONARY-COORDINATION-AGENTNET-DECENTRALIZED-EVOLUTIONARY-COORDINATION/">
-                            paper reading——AGENTNET: DECENTRALIZED EVOLUTIONARY COORDINATION AGENTNET: DECENTRALIZED EVOLUTIONARY COORDINATION
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            AgentNet 作为一个去中心化、演化学习的框架，其训练（或更准确地说是演化/学习阶段）和测试流程与传统的监督学习训练/测试模式有所不同。它的“训练”是一个持续的演化过程，智能体在处理任务的同时进行自我学习和网络优化。
-
-AgentNet 的完整流程（演化/学习阶段）AgentNet 的演化阶段对应于算法 1 的主循环，即处理任务集  的过程。每个任务  的处理都包含任务分配与处理、网络更...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Oct 19 2025 15:06:43 GMT+0800">
-                
-                    2025-10-19
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2025/10/19/paper-reading%E2%80%94%E2%80%94AGENTNET-DECENTRALIZED-EVOLUTIONARY-COORDINATION-AGENTNET-DECENTRALIZED-EVOLUTIONARY-COORDINATION/">Read more<span class="seo-reader-text">paper reading——AGENTNET: DECENTRALIZED EVOLUTIONARY COORDINATION AGENTNET: DECENTRALIZED EVOLUTIONARY COORDINATION</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
         <div class="paginator">
-	<span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa-regular fa-angle-right"></i></a>
+	<span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa-regular fa-angle-right"></i></a>
 </div>
   
     </div>
@@ -1368,7 +1398,7 @@ AgentNet 的完整流程（演化/学习阶段）AgentNet 的演化阶段对应�
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        18 posts in total
+                        21 posts in total
                     </span>
                     
                 </p>
